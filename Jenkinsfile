@@ -7,9 +7,9 @@ pipeline {
             }
         }
         }
-    node {label 'marathonlb'}
+    node marathonlb
     stages {
-        stage('Build') {
+        stage('Build1') {
             steps {
                 sh 'bash -c "./opt/json/updateweb.sh"'  
             }
