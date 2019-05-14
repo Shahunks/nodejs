@@ -7,7 +7,7 @@ pipeline {
             }
         }
         }
-    agent {label 'marathonlb'}
+    node {label 'marathonlb'}
     stages {
         stage('Build') {
             steps {
