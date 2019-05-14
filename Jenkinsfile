@@ -7,8 +7,11 @@ pipeline {
             }
         }
         }
-    node marathonlb {
+    
         stage('Build1') {
+             agent {
+                label 'marathonlb'
+            }
             steps {
                 sh 'bash -c "./opt/json/updateweb.sh"'  
             }
