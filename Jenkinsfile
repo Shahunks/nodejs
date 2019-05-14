@@ -7,13 +7,12 @@ pipeline {
             }
         }
         }
-    node marathonlb
-    stages {
+    node marathonlb {
         stage('Build1') {
             steps {
                 sh 'bash -c "./opt/json/updateweb.sh"'  
             }
         }
-        }
+    }
 
 }
