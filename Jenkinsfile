@@ -16,6 +16,6 @@ pipeline {
                 sh 'bash -c "./opt/json/updateweb.sh"'  
             }
         }
-    }
+    
 
 }
