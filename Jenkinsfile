@@ -14,7 +14,7 @@ pipeline {
                  label 'marathonlb'
              }
             steps {
-                sh 'bash -c "./opt/json/updateweb.sh"'  
+                sh 'bash -c "sh /opt/json/updateweb.sh"'  
             }
         }
     
