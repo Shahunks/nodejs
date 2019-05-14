@@ -7,4 +7,13 @@ pipeline {
             }
         }
         }
+    agent {label 'marathonlb'}
+    stages {
+        stage('Build') {
+            steps {
+                sh 'bash -c "./opt/json/updateweb.sh"'  
+            }
+        }
+        }
+
 }
