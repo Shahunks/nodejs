@@ -1,6 +1,7 @@
 pipeline {
-    agent {label 'dockere'}
+    agent none
     stages {
+        agent {label 'dockere'}
         stage('Build') {
             steps {
                 sh 'bash -c "sh shell.sh"'  
